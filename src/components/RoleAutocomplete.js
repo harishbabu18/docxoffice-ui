@@ -38,7 +38,7 @@ export default function RolesAutocomplete() {
           {option.authority}
         </li>
       )}
-      style={{ width: 500 }}
+      style={{ width: 420 }}
       renderInput={(params) => (
         <TextField {...params} label="Checkboxes" placeholder="Favorites" />
       )}

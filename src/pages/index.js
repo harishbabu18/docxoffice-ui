@@ -23,6 +23,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import UserForm from './../components/UserForm';
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -207,9 +208,9 @@ function DashboardContent() {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
-              <Grid item xs={12} md={8}>
+              <Grid item xs={12} md={6}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                <div className="ag-theme-alpine" style={{width: '100%', height: 1000}}>
+                <div className="ag-theme-alpine" style={{width: '100%', height: 540}}>
 <AgGridReact
     ref={gridRef} // Ref for accessing Grid's API
     rowData={rowData} // Row Data for Rows
@@ -222,14 +223,11 @@ function DashboardContent() {
 </div>
                 </Paper>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={6}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                   <UserForm />
                 </Paper>
               </Grid>
-
-
-
             </Grid>
             <Copyright sx={{ pt: 4 }} />
           </Container>
